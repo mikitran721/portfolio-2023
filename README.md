@@ -7,3 +7,4 @@
 
 - Homepage
 - Navbar
+- About Section
