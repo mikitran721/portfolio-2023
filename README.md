@@ -8,3 +8,4 @@
 - Homepage
 - Navbar
 - About Section
+- Projects
