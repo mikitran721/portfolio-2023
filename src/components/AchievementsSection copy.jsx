@@ -1,12 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useSpring, animated } from "react-spring";
 
 import dynamic from "next/dynamic";
 const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
-  ssr: false,
-});
-
-const Number = dynamic(() => import("@/components/Number"), {
   ssr: false,
 });
 
@@ -31,9 +28,23 @@ const achievementsList = [
   },
 ];
 
+// for animated numbers - spring
+function Number({ n }) {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 200,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
+
 const AchievementsSection = () => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <h2 className="text-white">
+        <Number n={100} />
+      </h2>
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
@@ -43,7 +54,6 @@ const AchievementsSection = () => {
             >
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}
-
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}

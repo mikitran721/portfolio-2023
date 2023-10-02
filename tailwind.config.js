@@ -17,7 +17,7 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.green,
+      primary: colors.yellow,
       secondary: colors.yellow,
     },
   },

@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "next": "latest",
-    "react": "latest",
+    "framer-motion": "^10.16.4",
+    "next": "13.4.15",
+    "react": "18.2.0",
+    "react-animated-numbers": "^0.16.0",
     "react-dom": "latest",
+    "react-spring": "^9.7.3",
     "react-type-animation": "^3.1.0",
     "resend": "^1.1.0"
   },
