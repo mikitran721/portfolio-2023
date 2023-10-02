@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.22.20",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.16.4",
     "next": "13.4.15",
