@@ -39,10 +39,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] sm:text-lg text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-            molestiae excepturi dolores nemo sapiente blanditiis, nobis,
-            corrupti consequatur magnam accusamus, sed repellat quisquam
-            deserunt? Numquam, odio. Nobis dignissimos veniam eos.
+            "Whoever has never made a mistake is also someone who has never
+            tried anything", Albert Einstein.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500  to-secondary-500 hover:bg-slate-200 text-white">
@@ -64,7 +62,7 @@ const HeroSection = () => {
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src="/images/hero-image.png"
+              src="/images/miki-cool.png"
               alt="hero img"
               width={300}
               height={300}
