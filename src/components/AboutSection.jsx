@@ -11,12 +11,13 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
-        <li>React.js</li>
+        <li>React.js; NextJs</li>
         <li>Express</li>
         <li>MongoDB</li>
         <li>Nest.js</li>
         <li>Tailwind.css</li>
         <li>MySQL</li>
+        <li>Typescript</li>
       </ul>
     ),
   },
@@ -25,8 +26,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>VNUHCM - UNIVERSITY OF INFORMATION TECHNOLOGY</li>
+        <li>APTECH WORLDWIDE</li>
+        <li>BCC HUMAN RESOURCES., JSC</li>
       </ul>
     ),
   },
@@ -35,8 +37,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Bachelor of Information Technology</li>
+        <li>PHP & MySQL certificate</li>
+        <li>Human Resources Professional Certificate</li>
       </ul>
     ),
   },
@@ -67,10 +70,10 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            working with JavaScript, React, Redux, Node.js, Express, HTML, CSS,
+            and Git. I am a quick learner and I am always looking to expand my
+            knowledge and skill set. I am a team player and I am excited to work
+            with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

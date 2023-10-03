@@ -13,21 +13,18 @@ const Number = dynamic(() => import("@/components/Number"), {
 const achievementsList = [
   {
     metric: "Projects",
-    value: "100",
+    value: "5",
     postfix: "+",
   },
   {
     prefix: "~",
     metric: "Users",
-    value: "100,000",
-  },
-  {
-    metric: "Awards",
-    value: "7",
+    value: "50",
   },
   {
     metric: "Years",
-    value: "5",
+    value: "2",
+    postfix: "+",
   },
 ];
 

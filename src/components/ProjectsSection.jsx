@@ -8,36 +8,39 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio website",
-    description: "Project 1 description",
+    description:
+      "Clone with YouTube tutorial; Using: NextJS 13 (app), TailwindCSS, framer-motion, type-animation, animated-numbers...",
     image: "/images/projects/1.png",
-    tag: ["All", "web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Front-end"],
+    gitUrl: "https://github.com/mikitran721/portfolio-2023",
+    previewUrl: "https://mikitran-portfolio-2023.vercel.app",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Clone Netflix",
+    description:
+      "Clone with YouTube tutorial; Using: NextJS 13 (pages), TailwindCSS, Next-Auth, MongoDB, TypeScript, SWR, BCrypt,...",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Fullstack"],
+    gitUrl: "https://github.com/mikitran721/netflix-clone",
+    previewUrl: "https://netflix-clone-mikitran.vercel.app",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Blogs Dashboard",
+    description:
+      "Clone with YouTube tutorial; Using: React, MySql, Bootstrap5 for Front-end/Back-end: NestJS, Typescript, Next-Auth, JWT, BCrypt, Swagger",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Fullstack"],
+    gitUrl: "https://github.com/mikitran721/blog-nestjs",
+    previewUrl: "https://github.com/mikitran721/blog-reactjs-frontend-",
   },
-  {
+  /* {
     id: 4,
     title: "Food Ordering Application",
     description: "Project 4 description",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Fullstack"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -46,7 +49,7 @@ const projectsData = [
     title: "React Firebase Template",
     description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -55,10 +58,10 @@ const projectsData = [
     title: "Full-stack Roadmap",
     description: "Project 5 description",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Fullstack"],
     gitUrl: "/",
     previewUrl: "/",
-  },
+  }, */
 ];
 
 const ProjectsSection = () => {
@@ -82,7 +85,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects1">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4">
-        My Projects
+        My recent Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -93,14 +96,14 @@ const ProjectsSection = () => {
 
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Fullstack"
+          isSelected={tag === "Fullstack"}
         />
 
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Front-end"
+          isSelected={tag === "Front-end"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
