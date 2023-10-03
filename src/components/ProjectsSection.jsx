@@ -29,7 +29,7 @@ const projectsData = [
     id: 3,
     title: "Blogs Dashboard",
     description:
-      "Clone with YouTube tutorial; Using: React, MySql, Bootstrap5 for Front-end/Back-end: NestJS, Typescript, Next-Auth, JWT, BCrypt, Swagger",
+      "Clone with YouTube tutorial; Using: React, MySql, Bootstrap5 for Front-end/Back-end: NestJS, Typescript, Next-Auth, JWT, BCrypt, Swagger, Docker",
     image: "/images/projects/3.png",
     tag: ["All", "Fullstack"],
     gitUrl: "https://github.com/mikitran721/blog-nestjs",
