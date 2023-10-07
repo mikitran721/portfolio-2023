@@ -35,16 +35,17 @@ const projectsData = [
     gitUrl: "https://github.com/mikitran721/blog-nestjs",
     previewUrl: "https://github.com/mikitran721/blog-reactjs-frontend-",
   },
-  /* {
+  {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "React Admin dashboard",
+    description:
+      "Clone with YouTube tutorial; Responsible web; Using: ViteJS, Sass, MUI Data-grid, ReChart, React-Query...",
     image: "/images/projects/4.png",
-    tag: ["All", "Fullstack"],
+    tag: ["All", "Front-end"],
     gitUrl: "/",
     previewUrl: "/",
   },
-  {
+  /*{
     id: 5,
     title: "React Firebase Template",
     description: "Authentication and CRUD operations",
