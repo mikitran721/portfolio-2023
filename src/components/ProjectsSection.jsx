@@ -42,8 +42,8 @@ const projectsData = [
       "Clone with YouTube tutorial; Responsible web; Using: ViteJS, Sass, MUI Data-grid, ReChart, React-Query...",
     image: "/images/projects/4.png",
     tag: ["All", "Front-end"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/mikitran721/vite-mui-adminDashboard",
+    previewUrl: "https://vitejs-admin-dashboard.vercel.app/",
   },
   /*{
     id: 5,
