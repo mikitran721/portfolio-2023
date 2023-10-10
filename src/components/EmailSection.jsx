@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import GithubIcon from "../../public/github-icon.svg";
+import LinkedinIcon from "../../public/linkedin-icon.svg";
 import { ImYoutube } from "react-icons/im";
 
 const EmailSection = () => {
@@ -50,6 +51,9 @@ const EmailSection = () => {
           </Link>
           <Link href="https://www.youtube.com/@enadev">
             <ImYoutube className="text-white" size={50} />
+          </Link>
+          <Link href="https://www.linkedin.com/in/miki-enadev-b60057295/">
+            <LinkedinIcon className="text-white" size={50} />
           </Link>
         </div>
       </div>
