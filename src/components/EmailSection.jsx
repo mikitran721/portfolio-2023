@@ -52,9 +52,6 @@ const EmailSection = () => {
           <Link href="https://www.youtube.com/@enadev">
             <ImYoutube className="text-white" size={50} />
           </Link>
-          <Link href="https://www.linkedin.com/in/miki-enadev-b60057295/">
-            <LinkedinIcon className="text-white" size={50} />
-          </Link>
         </div>
       </div>
 
