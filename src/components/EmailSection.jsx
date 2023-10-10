@@ -4,13 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 import GithubIcon from "../../public/github-icon.svg";
-import { ImYoutube } from "react-icons/im";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
+import { ImYoutube } from "react-icons/im";
+// import LinkedinIcon from "../../public/linkedin-icon.svg";
 
 const EmailSection = () => {
-  const [emailSubmitted, SetEmailSubmitted] = useState(false);
+  // const [emailSubmitted, SetEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  /* const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
       email: e.target.email.value,
@@ -29,12 +30,12 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // const resData = await response.json();
     if (response.status === 200) {
       console.log("Message sent successfully");
       SetEmailSubmitted(true);
     }
-  };
+  }; */
 
   return (
     <section
@@ -46,14 +47,17 @@ const EmailSection = () => {
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
 
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/mikitran721">
+          <Link target="_blank" href="https://github.com/mikitran721">
             <Image src={GithubIcon} alt="Github icon" />
           </Link>
-          <Link href="https://www.youtube.com/@enadev">
-            <ImYoutube className="text-white" size={50} />
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/miki-enadev-b60057295"
+          >
+            <Image src={LinkedinIcon} alt="Github icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/miki-enadev-b60057295/">
-            <LinkedinIcon className="text-white" size={50} />
+          <Link target="_blank" href="https://www.youtube.com/@enadev">
+            <ImYoutube className="text-white" size={50} />
           </Link>
         </div>
       </div>
@@ -75,11 +79,11 @@ const EmailSection = () => {
               Send Message
             </button>
           </Link>
-          {emailSubmitted && (
+          {/* {emailSubmitted && (
             <p className="text-green-500 text-sm mt-2">
               Email sent successfully!
             </p>
-          )}
+          )} */}
         </form>
       </div>
     </section>
