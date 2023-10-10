@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import GithubIcon from "../../public/github-icon.svg";
-import LinkedinIcon from "../../public/linkedin-icon.svg";
 import { ImYoutube } from "react-icons/im";
+import LinkedinIcon from "../../public/linkedin-icon.svg";
 
 const EmailSection = () => {
   const [emailSubmitted, SetEmailSubmitted] = useState(false);
